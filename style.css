@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    
+}
+.header
+{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.rem 7%;
+    background: black;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 1.50rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 1rem;
+    border-radius: 50px;
+    padding: 5px 4px;
+
+}
+.navbar a:hover
+{
+    color: black;
+    background: white; 
+}
+.navbar a.active
+{
+    color: black;
+    background: white; 
+
+}
+.main-btn
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid black;
+    padding: .375rem 1.875rem;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+}
+.lg-btn
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid rgb(58, 54, 54);
+    padding: .375rem 1.875em;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s; 
+}
+/**home section**/
+.slider-box{
+    width: 100%;
+    height: 90vh;
+    margin: 30px auto;
+    position: relative;
+}
+#slider {
+    width: 100%;
+    display: inline-flex;
+}
+#slider img 
+{
+    width: 100%;
+}
+.indicators
+{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+
+}
+.indicators span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(248, 205, 126);
+    border: 0.0625rem solid white;
+    cursor: pointer;
+}
+
+#text-caption
+{
+    color: black;
+    font-weight: bold;
+    
+
+}
+.booking-area
+{
+    background: white;
+    box-shadow: 0.625rem .9375rem 0 rgb(0 0 0 / 10%);
+    margin-top: 12rem;
+    padding:3.120rem 1.875rem;
+    position: relative;
+    z-index: 9999999;
+    
+}
+/**about section**/
+.about_wrapper
+{
+    padding-top: 9.375rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.about_wrapper h3
+{
+    font-weight: bold;
+}
+.about_wrapper span
+{
+    color: orange;
+}
+.about_wrapper .main-btn
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid black;
+    padding: .375rem 1.875rem;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+}
+.about_wrapper .mainn-btn
+{
+    color: black;
+    
+}
+.container .img-flute
+{
+    height: 80%;
+    width: 70%;
+}
+/**room section**/
+.rooms_wrapper
+{
+    padding-top: 8.00rem; 
+}
+.rooms_wrapper h5 
+{
+    text-align: center;
+    color: rgb(43, 41, 41);
+}
+.rooms_wrapper h3
+{
+    text-align: center;
+    color: rgb(7, 7, 54);
+}
+.rooms_wrapper .room-items .img-flute
+{
+    width: 100%;
+    height: 100%;
+}
+.rooms_wrapper .room-items
+{
+    position: relative;
+    overflow: hidden;
+}
+.rooms_wrapper .room-items img{
+    width: 100%;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover img{
+    -webkit-transform: scale3d(1.05,1.05,1.05);;
+    transform: scale3d(1.05,1.05,1.05);
+}
+.rooms_wrapper .room-items::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 400ms ease-in 0s;
+    transition: all 400ms ease-in 0s;
+}
+.rooms_wrapper .room-items:hover::before
+{
+    opacity: 0.6;
+}
+.rooms_wrapper .room-item-wrap
+{
+    position: absolute;
+    left: 1.875rem;
+    right: 1.875rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.rooms_wrapper .room-items .room-content
+{
+    border:.125rem solid white;
+    padding:5rem 1.875rem;
+    -webkit-transform: scale3d(1.2,1.2,1.2);
+    transform: scale3d(1.2,1.2,1.2);
+    transition: all 500ms ease-in 0s;
+    opacity: 0;
+}
+.rooms_wrapper .room-items:hover .room-content
+{
+    opacity:1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+
+}
+.rooms_wrapper .room-item-wrap .room-content .main-btn:hover
+{
+    background-color: rgb(218, 187, 131);
+    border-color:white; 
+}
+.rooms_wrapper .room-item-wrap .room-content .main-btn
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid black;
+    padding: .375rem 1.875em;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+}
+
+.Services_wrapper 
+{
+padding-top: 6.00rem; 
+}
+.Services_wrapper h3
+{
+    color: rgb(31, 31, 78);
+}
+.Services_wrapper .img-flute
+{
+    width: 70%;
+    height: 40%;
+}
+.Services_wrapper .main-btn
+{
+    border-color: orange;
+}
+.Services_wrapper .main-btn:hover
+{
+    background-color: orange;
+ 
+}
+.team_wrapper
+{
+    padding-top: 5.00rem; 
+}
+.team_wrapper h3
+{
+    color: rgb(41, 41, 97);
+}
+.team_wrapper .card
+{
+    position: relative;
+    overflow: hidden;
+}
+.team_wrapper .team-info
+{
+background-color: rgb(224, 148, 6);
+position: absolute;
+width: 100%;
+bottom: 0;
+text-align: center;
+padding: 1.25rem;
+margin-bottom:-4.6875rem;
+transition: all 0.3s ease-in-out;
+}
+.team_wrapper .card :hover.team-info
+{
+    margin-bottom: 0;
+}
+.team_wrapper .team-info h5
+{
+    color: #fefefe;
+}
+.team_wrapper .team-info p
+{
+    color: white;
+}
+.team_wrapper .team-info .social-network
+{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 1.25rem;
+    margin: 1.25rem -1.25rem -1.25rem;
+    background-color:rgb(12, 12, 34);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.team_wrapper .team-info .social-network li a{
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: block;
+    border-radius: 50%;
+    font-size: .9375rem;
+    color: white;
+    border: .0625rem solid white;
+}
+.footer_wrapper
+{
+    padding-top: 6.00rem;
+    background-color: rgb(61, 59, 59);
+}
+.footer_wrapper h5{
+    color: #fefefe;
+    margin-bottom: 1.25rem;
+}
+.footer_wrapper ul li{
+    margin-bottom: 1.500rem;
+    list-style: none;
+   color: white;
+   text-decoration: none;
+}
+.footer_wrapper  li a
+{
+color:red;
+}
+
+.footer_wrapper .social-network a
+{
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: block;
+    border-radius: 50%;
+    font-size: .9375rem;
+    color: white;
+    border: .0625rem solid white;
+}
+.footer_wrapper p{
+    color: #fefefe;
+}
+.footer_wrapper ul li a{
+    color:white;
+    text-decoration: none;
+}
+.list-unstyled li a {
+    color:white;
+    text-decoration: none;
+}
+.footer_wrapper p{
+     color: #fefefe;
+}
+..footer_wrapper .container
+{
+    width: 50%;
+    height: 30%;
+}
